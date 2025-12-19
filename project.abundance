@@ -24339,7 +24339,7 @@
       "ioValues": [
         {
           "name": "xDist",
-          "ioValue": -0.5
+          "ioValue": 0
         },
         {
           "name": "yDist",
@@ -24347,28 +24347,28 @@
         },
         {
           "name": "zDist",
-          "ioValue": 0
+          "ioValue": -28.575000000000003
         }
       ]
     },
     {
       "atomType": "Equation",
-      "x": 0.6634304207119741,
-      "y": 0.6258660508083141,
+      "x": 0.7243797195253505,
+      "y": 0.5150115473441108,
       "uniqueID": "id-44498",
-      "name": "-z/2",
+      "name": "-3*z/2",
       "ioValues": [
         {
           "name": "z",
-          "ioValue": 1
+          "ioValue": 19.05
         }
       ],
-      "currentEquation": "-z/2"
+      "currentEquation": "-3*z/2"
     },
     {
       "atomType": "Equation",
-      "x": 0.6634304207119741,
-      "y": 0.8106235565819861,
+      "x": 0.7259978425026968,
+      "y": 0.6189376443418013,
       "uniqueID": "id-44502",
       "name": "y/2",
       "ioValues": [
@@ -24435,6 +24435,11 @@
       "ap2Name": "WoodThick",
       "ap1ID": "id-3910",
       "ap2ID": "id-35106"
+    },
+    {
+      "ap2Name": "z",
+      "ap1ID": "id-3910",
+      "ap2ID": "id-44498"
     },
     {
       "ap2Name": "x",
@@ -24752,7 +24757,7 @@
       "ap2ID": "id-7"
     },
     {
-      "ap2Name": "xDist",
+      "ap2Name": "zDist",
       "ap1ID": "id-44498",
       "ap2ID": "id-44492"
     },
