@@ -24339,7 +24339,7 @@
       "ioValues": [
         {
           "name": "xDist",
-          "ioValue": 0
+          "ioValue": -1220
         },
         {
           "name": "yDist",
@@ -24378,6 +24378,24 @@
         }
       ],
       "currentEquation": "y/2"
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.7335490830636462,
+      "y": 0.7621247113163973,
+      "uniqueID": "id-44509",
+      "name": "-.5*x -  y",
+      "ioValues": [
+        {
+          "name": "x",
+          "ioValue": 2438
+        },
+        {
+          "name": "y",
+          "ioValue": 1
+        }
+      ],
+      "currentEquation": "-.5*x -  y"
     }
   ],
   "allConnectors": [
@@ -24470,6 +24488,11 @@
       "ap2Name": "BeamLength",
       "ap1ID": "id-3913",
       "ap2ID": "id-38226"
+    },
+    {
+      "ap2Name": "x",
+      "ap1ID": "id-3913",
+      "ap2ID": "id-44509"
     },
     {
       "ap2Name": "y",
@@ -24764,6 +24787,11 @@
     {
       "ap2Name": "yDist",
       "ap1ID": "id-44502",
+      "ap2ID": "id-44492"
+    },
+    {
+      "ap2Name": "xDist",
+      "ap1ID": "id-44509",
       "ap2ID": "id-44492"
     }
   ],
