@@ -5056,6 +5056,22 @@
           "value": 44.5
         },
         {
+          "atomType": "Input",
+          "x": 0.01815,
+          "y": 0.10999999999999999,
+          "uniqueID": "id-41384",
+          "name": "BeamLength",
+          "type": "number"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.01815,
+          "y": 0.176,
+          "uniqueID": "id-41386",
+          "name": "BeamHeight",
+          "type": "number"
+        },
+        {
           "atomType": "GitHubMolecule",
           "x": 0.5140237324703344,
           "y": 0.5889145496535797,
@@ -5181,22 +5197,6 @@
           },
           "unitsKey": "MM",
           "fileTypeVersion": 1
-        },
-        {
-          "atomType": "Input",
-          "x": 0.01815,
-          "y": 0.36392147806004616,
-          "uniqueID": "id-41384",
-          "name": "BeamLength",
-          "type": "number"
-        },
-        {
-          "atomType": "Input",
-          "x": 0.01815,
-          "y": 0.42992147806004616,
-          "uniqueID": "id-41386",
-          "name": "BeamHeight",
-          "type": "number"
         }
       ],
       "allConnectors": [
@@ -5241,11 +5241,6 @@
           "ap2ID": "id-41339"
         },
         {
-          "ap2Name": "geometry",
-          "ap1ID": "id-41341",
-          "ap2ID": "id-41335"
-        },
-        {
           "ap2Name": "x",
           "ap1ID": "id-41384",
           "ap2ID": "id-41334"
@@ -5254,6 +5249,11 @@
           "ap2Name": "x",
           "ap1ID": "id-41386",
           "ap2ID": "id-41339"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-41341",
+          "ap2ID": "id-41335"
         }
       ],
       "fileTypeVersion": 1
@@ -24330,6 +24330,54 @@
       },
       "unitsKey": "MM",
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Move",
+      "x": 0.8058252427184466,
+      "y": 0.5912240184757506,
+      "uniqueID": "id-44492",
+      "ioValues": [
+        {
+          "name": "xDist",
+          "ioValue": -0.5
+        },
+        {
+          "name": "yDist",
+          "ioValue": 101.5
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.6634304207119741,
+      "y": 0.6258660508083141,
+      "uniqueID": "id-44498",
+      "name": "-z/2",
+      "ioValues": [
+        {
+          "name": "z",
+          "ioValue": 1
+        }
+      ],
+      "currentEquation": "-z/2"
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.6634304207119741,
+      "y": 0.8106235565819861,
+      "uniqueID": "id-44502",
+      "name": "y/2",
+      "ioValues": [
+        {
+          "name": "y",
+          "ioValue": 203
+        }
+      ],
+      "currentEquation": "y/2"
     }
   ],
   "allConnectors": [
@@ -24469,6 +24517,11 @@
       "ap2ID": "id-38226"
     },
     {
+      "ap2Name": "y",
+      "ap1ID": "id-3916",
+      "ap2ID": "id-44502"
+    },
+    {
       "ap2Name": "TopHeight",
       "ap1ID": "id-3919",
       "ap2ID": "id-35106"
@@ -24594,9 +24647,9 @@
       "ap2ID": "id-9179"
     },
     {
-      "ap2Name": "number or geometry",
+      "ap2Name": "geometry",
       "ap1ID": "id-9189",
-      "ap2ID": "id-7"
+      "ap2ID": "id-44492"
     },
     {
       "ap2Name": "geometry",
@@ -24692,6 +24745,21 @@
       "ap2Name": "Shape 2",
       "ap1ID": "id-28876",
       "ap2ID": "id-9189"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-44492",
+      "ap2ID": "id-7"
+    },
+    {
+      "ap2Name": "xDist",
+      "ap1ID": "id-44498",
+      "ap2ID": "id-44492"
+    },
+    {
+      "ap2Name": "yDist",
+      "ap1ID": "id-44502",
+      "ap2ID": "id-44492"
     }
   ],
   "unitsKey": "MM",
