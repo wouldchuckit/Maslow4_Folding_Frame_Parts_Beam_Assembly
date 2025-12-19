@@ -2855,8 +2855,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.17475728155339806,
-      "y": 0.8822170900692841,
+      "x": 0.3042071197411003,
+      "y": 0.06928406466512702,
       "uniqueID": "id-1423",
       "name": "Maslow4_Folding_Frame_Parts_anchor_tower",
       "ioValues": [
@@ -4473,8 +4473,8 @@
     },
     {
       "atomType": "GitHubMolecule",
-      "x": 0.4115426105717368,
-      "y": 0.5750577367205543,
+      "x": 0.43365695792880254,
+      "y": 0.5011547344110855,
       "uniqueID": "id-239",
       "name": "Maslow4_Folding_Frame_Parts_Beam",
       "ioValues": [
