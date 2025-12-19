@@ -423,6 +423,108 @@
       "currentEquation": "1.5* z"
     },
     {
+      "atomType": "Equation",
+      "x": 0.4444444444444444,
+      "y": 0.7782909930715934,
+      "uniqueID": "id-38196",
+      "name": "x/16",
+      "ioValues": [
+        {
+          "name": "x",
+          "ioValue": 2438
+        }
+      ],
+      "currentEquation": "x/16"
+    },
+    {
+      "atomType": "Rotate",
+      "x": 0.5916936353829558,
+      "y": 0.7043879907621247,
+      "uniqueID": "id-38200",
+      "ioValues": [
+        {
+          "name": "x-axis degrees",
+          "ioValue": 0
+        },
+        {
+          "name": "y-axis degrees",
+          "ioValue": 90
+        },
+        {
+          "name": "z-axis degrees",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.6413160733549083,
+      "y": 0.8614318706697459,
+      "uniqueID": "id-38206",
+      "ioValues": [
+        {
+          "name": "xDist",
+          "ioValue": -76.1875
+        },
+        {
+          "name": "yDist",
+          "ioValue": 57
+        },
+        {
+          "name": "zDist",
+          "ioValue": -19
+        }
+      ]
+    },
+    {
+      "atomType": "Constant",
+      "x": 0.5501618122977346,
+      "y": 0.812933025404157,
+      "uniqueID": "id-38212",
+      "name": "half2by4",
+      "value": -19
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.4886731391585761,
+      "y": 0.9145496535796767,
+      "uniqueID": "id-38214",
+      "name": "-x/2",
+      "ioValues": [
+        {
+          "name": "x",
+          "ioValue": 152.375
+        }
+      ],
+      "currentEquation": "-x/2"
+    },
+    {
+      "atomType": "Equation",
+      "x": 0.6672060409924487,
+      "y": 0.5958429561200923,
+      "uniqueID": "id-38218",
+      "name": ".5*x - y",
+      "ioValues": [
+        {
+          "name": "x",
+          "ioValue": 203
+        },
+        {
+          "name": "y",
+          "ioValue": 44.5
+        }
+      ],
+      "currentEquation": ".5*x - y"
+    },
+    {
+      "atomType": "Constant",
+      "x": 0.540453074433657,
+      "y": 0.7367205542725173,
+      "uniqueID": "id-38224",
+      "name": "Half4by2",
+      "value": 44.5
+    },
+    {
       "atomType": "GitHubMolecule",
       "x": 0.18284789644012944,
       "y": 0.7297921478060047,
@@ -4928,6 +5030,461 @@
         "isLocal": false
       },
       "unitsKey": "MM",
+      "fileTypeVersion": 1
+    },
+    {
+      "atomType": "GitHubMolecule",
+      "x": 0.5097087378640777,
+      "y": 0.6581986143187066,
+      "uniqueID": "id-38181",
+      "name": "2_by_4_lumber",
+      "ioValues": [
+        {
+          "name": "2by4Length",
+          "ioValue": 152.375
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-38175"
+        },
+        {
+          "atomType": "Rectangle",
+          "x": 0.1844660194174757,
+          "y": 0.11316397228637413,
+          "uniqueID": "id-38176",
+          "ioValues": [
+            {
+              "name": "x length",
+              "ioValue": 38
+            },
+            {
+              "name": "y length",
+              "ioValue": 89
+            }
+          ]
+        },
+        {
+          "atomType": "Input",
+          "x": 0.01815,
+          "y": 0.10999999999999999,
+          "uniqueID": "id-38177",
+          "name": "2by4Length",
+          "type": "number"
+        },
+        {
+          "atomType": "Extrude",
+          "x": 0.3149946062567422,
+          "y": 0.22170900692840645,
+          "uniqueID": "id-38178",
+          "ioValues": [
+            {
+              "name": "height",
+              "ioValue": 152.375
+            }
+          ]
+        },
+        {
+          "atomType": "Constant",
+          "x": 0.10517799352750809,
+          "y": 0.3302540415704388,
+          "uniqueID": "id-38179",
+          "name": "2by4width",
+          "value": 38
+        },
+        {
+          "atomType": "Constant",
+          "x": 0.0965480043149946,
+          "y": 0.5103926096997691,
+          "uniqueID": "id-38180",
+          "name": "2by4height",
+          "value": 89
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-38176",
+          "ap2ID": "id-38178"
+        },
+        {
+          "ap2Name": "height",
+          "ap1ID": "id-38177",
+          "ap2ID": "id-38178"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-38178",
+          "ap2ID": "id-38175"
+        },
+        {
+          "ap2Name": "x length",
+          "ap1ID": "id-38179",
+          "ap2ID": "id-38176"
+        },
+        {
+          "ap2Name": "y length",
+          "ap1ID": "id-38180",
+          "ap2ID": "id-38176"
+        }
+      ],
+      "parentRepo": {
+        "privateRepo": false,
+        "repoName": "2_by_4_lumber",
+        "dateCreated": "2025-12-19T07:01:50Z",
+        "readMe": "https://raw.githubusercontent.com/wouldchuckit/2_by_4_lumber/master/README.md?sanitize=true",
+        "yyyy": 2025,
+        "topMoleculeID": "id-4",
+        "githubMoleculesUsed": [],
+        "html_url": "https://github.com/wouldchuckit/2_by_4_lumber",
+        "topics": [
+          "hardware",
+          "lumber"
+        ],
+        "parentRepo": null,
+        "forks": 0,
+        "dateModified": "739604",
+        "ranking": 0,
+        "searchField": "2_by_4_lumber wouldchuckit a two by four 2x4 stud lumber not complicated.  hardware lumber",
+        "owner": "wouldchuckit",
+        "description": "a two by four 2x4 stud lumber Not complicated. ",
+        "contentURL": "https://raw.githubusercontent.com/wouldchuckit/2_by_4_lumber/master/project.abundance?sanitize=true",
+        "svgURL": "https://raw.githubusercontent.com/wouldchuckit/2_by_4_lumber/master/project.svg?sanitize=true",
+        "isLocal": false
+      },
+      "unitsKey": "MM",
+      "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.7567421790722761,
+      "y": 0.7321016166281755,
+      "uniqueID": "id-38226",
+      "name": "2by4SpoilboardBlock",
+      "ioValues": [
+        {
+          "name": "BeamLength",
+          "ioValue": 10
+        },
+        {
+          "name": "BeamHeight",
+          "ioValue": 10
+        }
+      ],
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-38228"
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.4255663430420712,
+          "y": 0.815242494226328,
+          "uniqueID": "id-41334",
+          "name": "x/16",
+          "ioValues": [
+            {
+              "name": "x",
+              "ioValue": 10
+            }
+          ],
+          "currentEquation": "x/16"
+        },
+        {
+          "atomType": "Rotate",
+          "x": 0.6127292340884574,
+          "y": 0.7136258660508084,
+          "uniqueID": "id-41335",
+          "ioValues": [
+            {
+              "name": "x-axis degrees",
+              "ioValue": 0
+            },
+            {
+              "name": "y-axis degrees",
+              "ioValue": 90
+            },
+            {
+              "name": "z-axis degrees",
+              "ioValue": 0
+            }
+          ]
+        },
+        {
+          "atomType": "Move",
+          "x": 0.6913160733549083,
+          "y": 0.8114318706697459,
+          "uniqueID": "id-41336",
+          "ioValues": [
+            {
+              "name": "xDist",
+              "ioValue": -0.3125
+            },
+            {
+              "name": "yDist",
+              "ioValue": -39.5
+            },
+            {
+              "name": "zDist",
+              "ioValue": -19
+            }
+          ]
+        },
+        {
+          "atomType": "Constant",
+          "x": 0.5215749730312838,
+          "y": 0.7829099307159354,
+          "uniqueID": "id-41337",
+          "value": -19
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.5258899676375405,
+          "y": 0.9284064665127021,
+          "uniqueID": "id-41338",
+          "name": "-x/2",
+          "ioValues": [
+            {
+              "name": "x",
+              "ioValue": 0.625
+            }
+          ],
+          "currentEquation": "-x/2"
+        },
+        {
+          "atomType": "Equation",
+          "x": 0.6121898597626754,
+          "y": 0.5103926096997691,
+          "uniqueID": "id-41339",
+          "name": ".5*x - y",
+          "ioValues": [
+            {
+              "name": "x",
+              "ioValue": 10
+            },
+            {
+              "name": "y",
+              "ioValue": 44.5
+            }
+          ],
+          "currentEquation": ".5*x - y"
+        },
+        {
+          "atomType": "Constant",
+          "x": 0.5183387270765911,
+          "y": 0.6928406466512702,
+          "uniqueID": "id-41340",
+          "name": "Constant_1",
+          "value": 44.5
+        },
+        {
+          "atomType": "GitHubMolecule",
+          "x": 0.5140237324703344,
+          "y": 0.5889145496535797,
+          "uniqueID": "id-41341",
+          "name": "2_by_4_lumber",
+          "ioValues": [
+            {
+              "name": "2by4Length",
+              "ioValue": 0.625
+            }
+          ],
+          "topLevel": false,
+          "allAtoms": [
+            {
+              "atomType": "Output",
+              "x": 0.98,
+              "y": 0.5,
+              "uniqueID": "id-41342"
+            },
+            {
+              "atomType": "Rectangle",
+              "x": 0.1844660194174757,
+              "y": 0.11316397228637413,
+              "uniqueID": "id-41343",
+              "ioValues": [
+                {
+                  "name": "x length",
+                  "ioValue": 38
+                },
+                {
+                  "name": "y length",
+                  "ioValue": 89
+                }
+              ]
+            },
+            {
+              "atomType": "Input",
+              "x": 0.01815,
+              "y": 0.10999999999999999,
+              "uniqueID": "id-41344",
+              "name": "2by4Length",
+              "type": "number"
+            },
+            {
+              "atomType": "Extrude",
+              "x": 0.3149946062567422,
+              "y": 0.22170900692840645,
+              "uniqueID": "id-41345",
+              "ioValues": [
+                {
+                  "name": "height",
+                  "ioValue": 0.625
+                }
+              ]
+            },
+            {
+              "atomType": "Constant",
+              "x": 0.10517799352750809,
+              "y": 0.3302540415704388,
+              "uniqueID": "id-41346",
+              "name": "2by4width",
+              "value": 38
+            },
+            {
+              "atomType": "Constant",
+              "x": 0.0965480043149946,
+              "y": 0.5103926096997691,
+              "uniqueID": "id-41347",
+              "name": "2by4height",
+              "value": 89
+            }
+          ],
+          "allConnectors": [
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-41343",
+              "ap2ID": "id-41345"
+            },
+            {
+              "ap2Name": "height",
+              "ap1ID": "id-41344",
+              "ap2ID": "id-41345"
+            },
+            {
+              "ap2Name": "number or geometry",
+              "ap1ID": "id-41345",
+              "ap2ID": "id-41342"
+            },
+            {
+              "ap2Name": "x length",
+              "ap1ID": "id-41346",
+              "ap2ID": "id-41343"
+            },
+            {
+              "ap2Name": "y length",
+              "ap1ID": "id-41347",
+              "ap2ID": "id-41343"
+            }
+          ],
+          "parentRepo": {
+            "privateRepo": false,
+            "repoName": "2_by_4_lumber",
+            "dateCreated": "2025-12-19T07:01:50Z",
+            "readMe": "https://raw.githubusercontent.com/wouldchuckit/2_by_4_lumber/master/README.md?sanitize=true",
+            "yyyy": 2025,
+            "topMoleculeID": "id-4",
+            "githubMoleculesUsed": [],
+            "html_url": "https://github.com/wouldchuckit/2_by_4_lumber",
+            "topics": [
+              "hardware",
+              "lumber"
+            ],
+            "parentRepo": null,
+            "forks": 0,
+            "dateModified": "739604",
+            "ranking": 0,
+            "searchField": "2_by_4_lumber wouldchuckit a two by four 2x4 stud lumber not complicated.  hardware lumber",
+            "owner": "wouldchuckit",
+            "description": "a two by four 2x4 stud lumber Not complicated. ",
+            "contentURL": "https://raw.githubusercontent.com/wouldchuckit/2_by_4_lumber/master/project.abundance?sanitize=true",
+            "svgURL": "https://raw.githubusercontent.com/wouldchuckit/2_by_4_lumber/master/project.svg?sanitize=true",
+            "isLocal": false
+          },
+          "unitsKey": "MM",
+          "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Input",
+          "x": 0.01815,
+          "y": 0.36392147806004616,
+          "uniqueID": "id-41384",
+          "name": "BeamLength",
+          "type": "number"
+        },
+        {
+          "atomType": "Input",
+          "x": 0.01815,
+          "y": 0.42992147806004616,
+          "uniqueID": "id-41386",
+          "name": "BeamHeight",
+          "type": "number"
+        }
+      ],
+      "allConnectors": [
+        {
+          "ap2Name": "2by4Length",
+          "ap1ID": "id-41334",
+          "ap2ID": "id-41341"
+        },
+        {
+          "ap2Name": "x",
+          "ap1ID": "id-41334",
+          "ap2ID": "id-41338"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-41335",
+          "ap2ID": "id-41336"
+        },
+        {
+          "ap2Name": "number or geometry",
+          "ap1ID": "id-41336",
+          "ap2ID": "id-38228"
+        },
+        {
+          "ap2Name": "zDist",
+          "ap1ID": "id-41337",
+          "ap2ID": "id-41336"
+        },
+        {
+          "ap2Name": "xDist",
+          "ap1ID": "id-41338",
+          "ap2ID": "id-41336"
+        },
+        {
+          "ap2Name": "yDist",
+          "ap1ID": "id-41339",
+          "ap2ID": "id-41336"
+        },
+        {
+          "ap2Name": "y",
+          "ap1ID": "id-41340",
+          "ap2ID": "id-41339"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-41341",
+          "ap2ID": "id-41335"
+        },
+        {
+          "ap2Name": "x",
+          "ap1ID": "id-41384",
+          "ap2ID": "id-41334"
+        },
+        {
+          "ap2Name": "x",
+          "ap1ID": "id-41386",
+          "ap2ID": "id-41339"
+        }
+      ],
       "fileTypeVersion": 1
     },
     {
@@ -24002,254 +24559,6 @@
       },
       "unitsKey": "MM",
       "fileTypeVersion": 1
-    },
-    {
-      "atomType": "GitHubMolecule",
-      "x": 0.5097087378640777,
-      "y": 0.6581986143187066,
-      "uniqueID": "id-38181",
-      "name": "2_by_4_lumber",
-      "ioValues": [
-        {
-          "name": "2by4Length",
-          "ioValue": 152.375
-        }
-      ],
-      "topLevel": false,
-      "allAtoms": [
-        {
-          "atomType": "Output",
-          "x": 0.98,
-          "y": 0.5,
-          "uniqueID": "id-38175"
-        },
-        {
-          "atomType": "Rectangle",
-          "x": 0.1844660194174757,
-          "y": 0.11316397228637413,
-          "uniqueID": "id-38176",
-          "ioValues": [
-            {
-              "name": "x length",
-              "ioValue": 38
-            },
-            {
-              "name": "y length",
-              "ioValue": 89
-            }
-          ]
-        },
-        {
-          "atomType": "Input",
-          "x": 0.01815,
-          "y": 0.10999999999999999,
-          "uniqueID": "id-38177",
-          "name": "2by4Length",
-          "type": "number"
-        },
-        {
-          "atomType": "Extrude",
-          "x": 0.3149946062567422,
-          "y": 0.22170900692840645,
-          "uniqueID": "id-38178",
-          "ioValues": [
-            {
-              "name": "height",
-              "ioValue": 152.375
-            }
-          ]
-        },
-        {
-          "atomType": "Constant",
-          "x": 0.10517799352750809,
-          "y": 0.3302540415704388,
-          "uniqueID": "id-38179",
-          "name": "2by4width",
-          "value": 38
-        },
-        {
-          "atomType": "Constant",
-          "x": 0.0965480043149946,
-          "y": 0.5103926096997691,
-          "uniqueID": "id-38180",
-          "name": "2by4height",
-          "value": 89
-        }
-      ],
-      "allConnectors": [
-        {
-          "ap2Name": "geometry",
-          "ap1ID": "id-38176",
-          "ap2ID": "id-38178"
-        },
-        {
-          "ap2Name": "height",
-          "ap1ID": "id-38177",
-          "ap2ID": "id-38178"
-        },
-        {
-          "ap2Name": "number or geometry",
-          "ap1ID": "id-38178",
-          "ap2ID": "id-38175"
-        },
-        {
-          "ap2Name": "x length",
-          "ap1ID": "id-38179",
-          "ap2ID": "id-38176"
-        },
-        {
-          "ap2Name": "y length",
-          "ap1ID": "id-38180",
-          "ap2ID": "id-38176"
-        }
-      ],
-      "parentRepo": {
-        "privateRepo": false,
-        "repoName": "2_by_4_lumber",
-        "dateCreated": "2025-12-19T07:01:50Z",
-        "readMe": "https://raw.githubusercontent.com/wouldchuckit/2_by_4_lumber/master/README.md?sanitize=true",
-        "yyyy": 2025,
-        "topMoleculeID": "id-4",
-        "githubMoleculesUsed": [],
-        "html_url": "https://github.com/wouldchuckit/2_by_4_lumber",
-        "topics": [
-          "hardware",
-          "lumber"
-        ],
-        "parentRepo": null,
-        "forks": 0,
-        "dateModified": "739604",
-        "ranking": 0,
-        "searchField": "2_by_4_lumber wouldchuckit a two by four 2x4 stud lumber not complicated.  hardware lumber",
-        "owner": "wouldchuckit",
-        "description": "a two by four 2x4 stud lumber Not complicated. ",
-        "contentURL": "https://raw.githubusercontent.com/wouldchuckit/2_by_4_lumber/master/project.abundance?sanitize=true",
-        "svgURL": "https://raw.githubusercontent.com/wouldchuckit/2_by_4_lumber/master/project.svg?sanitize=true",
-        "isLocal": false
-      },
-      "unitsKey": "MM",
-      "fileTypeVersion": 1
-    },
-    {
-      "atomType": "Equation",
-      "x": 0.4444444444444444,
-      "y": 0.7782909930715934,
-      "uniqueID": "id-38196",
-      "name": "x/16",
-      "ioValues": [
-        {
-          "name": "x",
-          "ioValue": 2438
-        }
-      ],
-      "currentEquation": "x/16"
-    },
-    {
-      "atomType": "Rotate",
-      "x": 0.5916936353829558,
-      "y": 0.7043879907621247,
-      "uniqueID": "id-38200",
-      "ioValues": [
-        {
-          "name": "x-axis degrees",
-          "ioValue": 0
-        },
-        {
-          "name": "y-axis degrees",
-          "ioValue": 90,
-          "currentEquation": "90"
-        },
-        {
-          "name": "z-axis degrees",
-          "ioValue": 0
-        }
-      ]
-    },
-    {
-      "atomType": "Move",
-      "x": 0.6413160733549083,
-      "y": 0.8614318706697459,
-      "uniqueID": "id-38206",
-      "ioValues": [
-        {
-          "name": "xDist",
-          "ioValue": -76.1875
-        },
-        {
-          "name": "yDist",
-          "ioValue": 57
-        },
-        {
-          "name": "zDist",
-          "ioValue": -19
-        }
-      ]
-    },
-    {
-      "atomType": "Constant",
-      "x": 0.5528586839266451,
-      "y": 0.8244803695150116,
-      "uniqueID": "id-38212",
-      "name": "half2by4",
-      "value": -19
-    },
-    {
-      "atomType": "Equation",
-      "x": 0.4886731391585761,
-      "y": 0.9145496535796767,
-      "uniqueID": "id-38214",
-      "name": "-x/2",
-      "ioValues": [
-        {
-          "name": "x",
-          "ioValue": 152.375
-        }
-      ],
-      "currentEquation": "-x/2"
-    },
-    {
-      "atomType": "Equation",
-      "x": 0.6672060409924487,
-      "y": 0.5958429561200923,
-      "uniqueID": "id-38218",
-      "name": ".5*x - y",
-      "ioValues": [
-        {
-          "name": "x",
-          "ioValue": 203
-        },
-        {
-          "name": "y",
-          "ioValue": 44.5
-        }
-      ],
-      "currentEquation": ".5*x - y"
-    },
-    {
-      "atomType": "Constant",
-      "x": 0.540453074433657,
-      "y": 0.7367205542725173,
-      "uniqueID": "id-38224",
-      "name": "Half4by2",
-      "value": 44.5
-    },
-    {
-      "atomType": "Molecule",
-      "x": 0.7686084142394821,
-      "y": 0.6789838337182448,
-      "uniqueID": "id-38226",
-      "name": "2by4SpoilboardBlock",
-      "topLevel": false,
-      "allAtoms": [
-        {
-          "atomType": "Output",
-          "x": 0.98,
-          "y": 0.5,
-          "uniqueID": "id-38228"
-        }
-      ],
-      "allConnectors": [],
-      "fileTypeVersion": 1
     }
   ],
   "allConnectors": [
@@ -24584,36 +24893,6 @@
       "ap2ID": "id-15353"
     },
     {
-      "ap2Name": "geometry",
-      "ap1ID": "id-25838",
-      "ap2ID": "id-15347"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-26707",
-      "ap2ID": "id-9179"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-35106",
-      "ap2ID": "id-9224"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-26203",
-      "ap2ID": "id-9194"
-    },
-    {
-      "ap2Name": "Shape 2",
-      "ap1ID": "id-28876",
-      "ap2ID": "id-9189"
-    },
-    {
-      "ap2Name": "geometry",
-      "ap1ID": "id-38181",
-      "ap2ID": "id-38200"
-    },
-    {
       "ap2Name": "2by4Length",
       "ap1ID": "id-38196",
       "ap2ID": "id-38181"
@@ -24652,6 +24931,36 @@
       "ap2Name": "y",
       "ap1ID": "id-38224",
       "ap2ID": "id-38218"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-25838",
+      "ap2ID": "id-15347"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-26707",
+      "ap2ID": "id-9179"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-35106",
+      "ap2ID": "id-9224"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-38181",
+      "ap2ID": "id-38200"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-26203",
+      "ap2ID": "id-9194"
+    },
+    {
+      "ap2Name": "Shape 2",
+      "ap1ID": "id-28876",
+      "ap2ID": "id-9189"
     }
   ],
   "unitsKey": "MM",
