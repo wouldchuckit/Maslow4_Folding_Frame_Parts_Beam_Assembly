@@ -19,7 +19,8 @@
     },
     {
       "name": "TopHeight",
-      "ioValue": 600
+      "ioValue": 600,
+      "currentEquation": "600"
     },
     {
       "name": "LegWidth",
@@ -51,7 +52,8 @@
     },
     {
       "name": "LegFromCenter",
-      "ioValue": 10
+      "ioValue": -500,
+      "currentEquation": "-500"
     }
   ],
   "topLevel": true,
@@ -310,7 +312,7 @@
       "ioValues": [
         {
           "name": "xDist",
-          "ioValue": 10
+          "ioValue": -500
         },
         {
           "name": "yDist",
