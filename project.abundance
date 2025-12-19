@@ -209,6 +209,10 @@
         {
           "name": "Shape 13",
           "ioValue": null
+        },
+        {
+          "name": "Shape 14",
+          "ioValue": null
         }
       ]
     },
@@ -24173,7 +24177,7 @@
         },
         {
           "name": "yDist",
-          "ioValue": 102.5
+          "ioValue": 57
         },
         {
           "name": "zDist",
@@ -24205,10 +24209,10 @@
     },
     {
       "atomType": "Equation",
-      "x": 0.7162891046386192,
-      "y": 0.6420323325635103,
+      "x": 0.6672060409924487,
+      "y": 0.5958429561200923,
       "uniqueID": "id-38218",
-      "name": ".5*x + y",
+      "name": ".5*x - y",
       "ioValues": [
         {
           "name": "x",
@@ -24216,10 +24220,36 @@
         },
         {
           "name": "y",
-          "ioValue": 1
+          "ioValue": 44.5
         }
       ],
-      "currentEquation": ".5*x + y"
+      "currentEquation": ".5*x - y"
+    },
+    {
+      "atomType": "Constant",
+      "x": 0.540453074433657,
+      "y": 0.7367205542725173,
+      "uniqueID": "id-38224",
+      "name": "Half4by2",
+      "value": 44.5
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.7686084142394821,
+      "y": 0.6789838337182448,
+      "uniqueID": "id-38226",
+      "name": "2by4SpoilboardBlock",
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 0.98,
+          "y": 0.5,
+          "uniqueID": "id-38228"
+        }
+      ],
+      "allConnectors": [],
+      "fileTypeVersion": 1
     }
   ],
   "allConnectors": [
@@ -24599,6 +24629,11 @@
       "ap2ID": "id-38206"
     },
     {
+      "ap2Name": "Shape 14",
+      "ap1ID": "id-38206",
+      "ap2ID": "id-9189"
+    },
+    {
       "ap2Name": "zDist",
       "ap1ID": "id-38212",
       "ap2ID": "id-38206"
@@ -24612,6 +24647,11 @@
       "ap2Name": "yDist",
       "ap1ID": "id-38218",
       "ap2ID": "id-38206"
+    },
+    {
+      "ap2Name": "y",
+      "ap1ID": "id-38224",
+      "ap2ID": "id-38218"
     }
   ],
   "unitsKey": "MM",
